@@ -15,13 +15,12 @@ form.addEventListener('submit', async function (e) {
 
     try {
         // Send the form data to the back-end API
-        const response = await fetch('http://localhost:3000/api/users', {
+        const response = await fetch('https://form-backend-tv9t.onrender.com', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
+            headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
         });
+        
 
         if (response.ok) {
             // Redirect to the thank-you.html page
