@@ -15,7 +15,7 @@ form.addEventListener('submit', async function (e) {
 
     try {
         // Send the form data to the back-end API
-        const response = await fetch('https://form-backend-tv9t.onrender.com', {
+        const response = await fetch('https://form-backend-tv9t.onrender.com/api/users', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData),
